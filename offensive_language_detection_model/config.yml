@@ -1,0 +1,32 @@
+#This file will hold the names of all the variables & file paths used in the model
+
+# Package Overview
+package_name: offensive_language_detection_model
+
+# Data Files
+training_data_file: train_data.csv
+test_data_file: test_data.csv
+
+#Set the url for the bert preprocessor
+bert_preprocessor_url: 'https://tfhub.dev/jeongukjae/distilbert_en_uncased_preprocess/2'
+
+#Set the url for the bert encoder
+bert_model_url: 'https://tfhub.dev/jeongukjae/distilbert_en_uncased_L-6_H-768_A-12/1'
+
+#Set the number of epoch for training the model
+epochs: 5
+
+#Set the value for validation split while training
+validation_split: 0.2
+
+#Set the threshold for probability of class 1
+threshold: 0.4
+
+#Set the value for no of positive data points
+pos: 3960
+
+#Set the value for no of negative data points
+neg: 7862
+
+#Set the value for no of total data points
+total_rows: 11822

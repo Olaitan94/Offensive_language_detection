@@ -1,0 +1,19 @@
+include *.txt
+include *.md
+recursive-include ./offensive_language_detection_model/*
+
+include offensive_language_detection_model/datasets/*.csv
+include offensive_language_detection_model/saved_model/assets
+include offensive_language_detection_model/saved_model/variables/*.index
+include offensive_language_detection_model/saved_model/*.pb
+include offensive_language_detection_model/saved_model/variables/*.data-00000-of-00001
+include offensive_language_detection_model/VERSION
+include offensive_language_detection_model/config.yml
+
+include ./requirements/requirements.txt
+include ./requirements/test_requirements.txt
+exclude *.log
+exclude *.cfg
+
+recursive-exclude * __pycache__
+recursive-exclude * *.py[co]
