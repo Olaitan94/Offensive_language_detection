@@ -16,8 +16,8 @@ def test_predict(sample_input_data):
 
     # Then
     first_val = result[0]
-    first_val_text = first_val.get("ACTUAL TEXT")
-    first_val_class = first_val.get("PREDICTED CLASS")
+    first_val_text = first_val.get("ACTUAL_TEXT")
+    first_val_class = first_val.get("PREDICTED_CLASS")
     first_val_prob = first_val.get("Probability")
     assert isinstance(first_val, dict)
     assert isinstance(first_val_text, str)
