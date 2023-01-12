@@ -29,6 +29,6 @@ def predict_text(text: str) -> dict:
     else:
         predicted_class = 'NORMAL'
 
-    results = {"ACTUAL TEXT": text, "PREDICTED CLASS": predicted_class,"Probability": probability}
+    results = {"ACTUAL_TEXT": text, "PREDICTED_CLASS": predicted_class,"Probability": probability}
 
     return results
